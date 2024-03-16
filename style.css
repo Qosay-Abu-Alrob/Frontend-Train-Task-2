@@ -8,7 +8,7 @@
     font-family: "Roboto", sans-serif;
 }
 body{
-    height: 100vh;
+    height: 200vh;
     background-image: url(images/image1.svg);
     background-position: right top ;
     background-repeat: no-repeat;
@@ -57,6 +57,9 @@ header > button {
     border: none;
     border-radius: 2px;
 }
+#Home{
+    margin-bottom: 30%;
+}
 #Home article{
     max-width: 600px;
     margin: 30vh 0% 0% 15%;
@@ -103,4 +106,112 @@ header > button {
 #Home article> button:nth-of-type(2){
     color: #091133; 
     border: solid 1px #091133 ;
+}
+/*********************************************************/
+#About  article{
+    display: flex;
+    align-items: center;
+    margin: 30vh 0% 15% 15%;;
+}
+#About  article div h1{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #091133;
+}
+#About > article > div  p{
+    width: 34vw;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #6F7CB2;
+}
+#About > article > div  p span{
+    display: block;
+    margin: 5% 0 10%;
+}
+#About > article > div  div{
+    display: flex;
+    
+}
+#About > article > div  div div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    
+}
+#About > article > div  div div img{
+    width: 2vw;
+    
+}
+#About > article > div  div div h3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;  
+    color: #091133;
+
+}
+#About > article > div  div div p{
+    width: 15vw;
+    color: #5D6970;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.image img{
+    width: 45vw;
+}
+.firstRegion,.secoundRegion,.thirdRegion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.firstRegion div p{
+    width: 28vw;
+}
+.firstRegion div p span{
+    display: block;
+    width: 28vw;
+    margin-top: 5%;
+}
+.secoundRegion div p{
+    width: 28vw;
+}
+.secoundRegion div p span{
+    display: block;
+    width: 28vw;
+    margin-top: 5%;
+}
+.thirdRegion div p{
+    width: 28vw;
+}
+.thirdRegion div p span{
+    display: block;
+    width: 28vw;
+    margin-top: 5%;
+}
+#About div p{
+    color: #6F7CB2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+#About div h1{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #091133;
 }
