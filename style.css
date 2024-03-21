@@ -7,6 +7,7 @@
 *{
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+    margin:  0;
 }
 body{
     height: 100vh;
@@ -19,6 +20,9 @@ header{
     justify-content: space-around;
     align-items: center;
     margin: 1%;
+}
+.fa-solid{
+        display: none;
 }
 header > nav > menu{
     display: flex;
@@ -110,10 +114,12 @@ header > button {
     border: solid 1px #091133 ;
     background: none;
 }
+
 #About  article{
     display: flex;
     align-items: center;
-    margin: 30vh 0% 15% 15%;;
+    flex-wrap:wrap;
+    margin: 35% 0% 15% 15%;
 }
 #About  article div h1{
     font-size: 36px;
@@ -179,11 +185,11 @@ header > button {
     margin-bottom: 10%;
 }
 .firstRegion div p{
-    width: 28vw;
+   max-width: 28vw;
 }
 .firstRegion div p span{
     display: block;
-    width: 28vw;
+    /*width: 28vw;*/
     margin-top: 5%;
 }
 .secoundRegion div p{
@@ -191,7 +197,7 @@ header > button {
 }
 .secoundRegion div p span{
     display: block;
-    width: 28vw;
+    /*width: 28vw;*/
     margin-top: 5%;
 }
 .thirdRegion div p{
@@ -199,7 +205,7 @@ header > button {
 }
 .thirdRegion div p span{
     display: block;
-    width: 28vw;
+    /*width: 28vw;*/
     margin-top: 5%;
 }
 #About div p{
@@ -218,16 +224,17 @@ header > button {
     text-align: left;
     color: #091133;
 }
-.firstRegion img,
-.secoundRegion img,
-.thirdRegion > img {
+.firstRegion> div > img,
+.secoundRegion> div > img,
+.thirdRegion> div > img {
     max-width: 100%;
 }
 #Contact{
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #E7ECFF;
+    background-color: #F3F5FF;
     height: 100vh;
 }
 #Contact h1{
@@ -250,12 +257,14 @@ header > button {
     line-height: 66px;
     letter-spacing: 1px;
     color: #222F65;
+    margin-top: 3%;
 }
 #Contact h3{
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     color: #37447E;  
+    margin: 0;
 }
 #Contact h6{
     font-size: 14px;
@@ -263,7 +272,8 @@ header > button {
     line-height: 24px;
     letter-spacing: 0px;
     text-align: center;
-    color: #5D6970;  
+    color: #5D6970; 
+    margin: 3em 0  0; 
 }
 #Contact button{
     width: 189px;
@@ -277,10 +287,19 @@ header > button {
     border: none;
     border-radius: 2px;
 }
+footer{
+    background-color: #E7ECFF;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 footer > div{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 footer > div p{
     font-size: 14px;
@@ -312,6 +331,7 @@ footer > div button{
 footer div:nth-of-type(2){
     display: flex;
     justify-content: space-around;  
+    align-items: center;
 }
 footer div:nth-of-type(2) menu{
     display: flex;
@@ -337,4 +357,209 @@ footer div:nth-of-type(2) div i {
 }
 hr{
     width: 60%;
+    margin: 2% 0;
+}
+header > i {
+    display: none;
+ }
+@media screen and (max-width: 1280px) {
+    #Home article{
+        margin: 15vh 0% 0% 5%;
+    }
+    #About{
+        margin-top: 45%;
+    }
+}
+@media screen and (max-width: 1120px) {
+    #About{
+        margin-top: 50%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #Home {
+        margin-bottom: -40%;
+        width: 100%;
+    }
+    #About{
+        margin-top: 60%;
+    }
+    body{
+        background-size: 70%;
+    }
+    #Home article>p{
+        width: 50vw;
+    }
+    #Home article>h1 {
+        font-size: 42px;
+    }
+    header>h2 {
+        margin-left: 10%;
+    }
+    .firstRegion div p{
+        max-width: 50vw;
+    }
+    .firstRegion> div > img, .secoundRegion> div > img, .thirdRegion> div > img {
+        margin: 0 auto;
+        padding-top:10%
+    }
+    #About > article > div  p{
+        width: 50vw;
+    }
+    #About  article div h1 {
+        font-size: 30px;
+    }
+    .firstRegion div p{
+        width: 50vw;
+        padding-top: 5%;
+    }
+    .secoundRegion div p,
+    .thirdRegion div p {
+        width: 50vw;
+        padding-top: 5%;
+    }
+    #About div h1 {
+      text-align: center;
+    }
+    header > button {
+       display: none;
+    }
+    #Home article>h1 {
+        font-size: 35px;
+        width: 50vw;
+    }
+    #Home article>p {
+    width:50vw;
+    font-size: 15px;
+    }
+    #About  article div h1 {
+        font-size: 26px;
+    }
+    #About > article > div  p {
+        width: 60vw;
+        font-size: 16px;
+        align-items: center;
+    }
+    #About  article {
+        justify-content: center;
+    }
+    #About  article div h1 {
+        text-align: center;
+    }
+    #About > article > div  div{
+        justify-content: space-evenly;
+    }
+    #About > article > div  p {
+        text-align: center;
+    }
+    #About > article > div  div div {
+        align-items: center;
+    }
+    #About > article > div  div div p {
+        text-align: center;
+    }
+    .firstRegion div:nth-of-type(2)
+    {
+        margin-left: 1%;
+    }
+    .thirdRegion div:nth-of-type(2)
+    {
+        margin-left: 5%;
+    }
+    .firstRegion,.secoundRegion,.thirdRegion{
+        flex-direction: column-reverse;
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width: 500px) {
+    header > nav {
+        display:none;
+    }
+    .fa-solid{
+        display: block;
+    }
+    header{
+        justify-content:space-around;
+        flex-direction: row-reverse;
+    }
+    header:hover nav menu {
+        display: block;
+    }
+    .fa-solid:hover + nav{
+        display: block;
+        background-color: #5D6970;
+    }
+    .fa-solid:hover + nav>menu{
+        position: absolute;
+        width: 36vw;
+        height: 35vh;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+    }
+    #Home article>h1 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    #Home article {
+        margin: 10% 0% 0% 2%;
+    }
+    #Home article>p {
+        width: 60vw;
+        font-size: 0.8rem;
+    }
+    #Home article > p >span {
+        width: 75vw;
+    }
+    #Home article>button {
+        width: 8rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+    body{
+        background-size: 60%;
+        background-position: right 15%;
+    }
+    #About  article {
+        margin: 0 auto;
+    }
+    #About > article > div  p{
+        width: 100%;
+    }
+    #About > article > div  div div p {
+        text-align: center;
+        width: 100%;
+    }
+    #About div h1{
+        font-size: 1.5rem;
+    }
+    .firstRegion div{
+        width: 100%;
+    }
+    #About div p {
+        max-width: 90%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .firstRegion> div > img, .secoundRegion> div > img, .thirdRegion> div > img {
+        width: 60%;
+        margin: 0 25%;
+    }
+    #Contact  p {
+        width: 90%;
+        text-align: center;
+    }
+    footer {
+        height: 20vh;
+    }
+    footer > div {
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    footer div:nth-of-type(2) div {
+        width: 40%;
+        margin-top: 2%;
+    }
+    footer > div h2{
+        margin: 3% 0;
+    }
 }
